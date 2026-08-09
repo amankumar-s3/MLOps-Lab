@@ -1,0 +1,13 @@
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "MLOps-Lab-Experiment"
+
+model:
+  name: "dummy_model"
+  test_size: 0.2
+  random_state: 42
+
+paths:
+  data_dir: "data/"
+  model_dir: "models/"
+  reports_dir: "reports/"
