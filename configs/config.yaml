@@ -1,13 +1,17 @@
-mlflow:
-  tracking_uri: "sqlite:///mlflow.db"
-  experiment_name: "MLOps-Lab-Experiment"
-
-model:
-  name: "dummy_model"
-  test_size: 0.2
+experiment:
+  name: "MLOps-Lab-Experiment"
   random_state: 42
 
-paths:
-  data_dir: "data/"
-  model_dir: "models/"
-  reports_dir: "reports/"
+data:
+  test_size: 0.2
+
+models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 200
+  random_forest:
+    n_estimators: 100
+    max_depth: 5
+  svm:
+    C: 1.0
+    kernel: "rbf"
