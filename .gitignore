@@ -4,3 +4,8 @@ mlruns/
 venv/
 __pycache__/
 mlruns/
+venv/
+__pycache__/
+*.pyc
+mlruns/
+.env
